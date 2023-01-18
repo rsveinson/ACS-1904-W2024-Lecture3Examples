@@ -17,13 +17,23 @@ public class CalculateAge
      * @return age in years
      */
     public static int getAge(String yyyymmdd){
-        int yyyy = Integer.parseInt(yyyymmdd.substring(0,4));
-        System.out.println(yyyy);
+        String[] tokens = yyyymmdd.split("-");
+        System.out.println(tokens.length);
         
-        int mm   = Integer.parseInt(yyyymmdd.substring(5,7));
+        int yyyy;
+        //yyyy = Integer.parseInt(yyyymmdd.substring(0,4));
+        yyyy = Integer.parseInt(tokens[0]);
+        System.out.println(yyyy);
+    
+        
+        int mm;
+        //mm = Integer.parseInt(yyyymmdd.substring(5,7));
+        mm = Integer.parseInt(tokens[1]);
         System.out.println(mm);
         
-        int dd   = Integer.parseInt(yyyymmdd.substring(8));
+        int dd;
+        //dd = Integer.parseInt(yyyymmdd.substring(8));
+        dd = Integer.parseInt(tokens[2]);
         System.out.println(dd);
         
         // age is difference between today and the birthday
