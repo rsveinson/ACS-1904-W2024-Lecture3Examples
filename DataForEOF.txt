@@ -1,0 +1,7 @@
+Flamingos 5 3 23 6 7 7
+Hippos 3 12 19 3 8 9
+Leopards 6 5 23 12 3 4
+Tigers 19 1 2 3 7 9
+Pandas 15 34 35 -23 -12 -100
+Capybaras 12 2 3 4 5 6
+Wombats 1 9 3 2 1 0
