@@ -16,6 +16,7 @@ public class CatenateWordsAlternate
         // for each word
         for(String s: tokens)
             // catenate to previous result
+            // s.substring(1) start at position 1 i.e. the second character
             newWord += Character.toUpperCase(s.charAt(0)) + s.substring(1).toLowerCase();
         return newWord;
     }

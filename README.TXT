@@ -1,12 +1,29 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+while(fReader.hasNext()){
+            // read a line from the file
+            strin = fReader.nextLine();
+            System.out.println(strin);
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+        }// end eof
+        
+while(fReader.hasNext()){
+            // read a line from the file
+            strin = fReader.nextLine();
+            //System.out.println(strin);
+
+            // split the input string into tokens
+            tokens = strin.split(delim);
+            //System.out.println(tokens.length);
+
+            // the actual number of columns in use
+            columnCount = tokens.length -1;     
+
+            // parse each token and add it to the appropraite array
+            team[rowCount] = tokens[0];
+
+            // load each row of the table
+            for(int i = 1; i < tokens.length; i++){
+                numbers[rowCount][i - 1] = Integer.parseInt(tokens[i]);
+            }// end for i
+
+            rowCount++;
+        }// end eof
