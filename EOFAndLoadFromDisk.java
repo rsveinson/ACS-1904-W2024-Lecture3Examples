@@ -14,9 +14,9 @@ public class EOFAndLoadFromDisk{
         final int MAXNUMBERS = 15;
 
         // stuff to read records from the file
-        String strin;                   // input string
-        String[] tokens = null;       // an array of strings for tokens split from the input string
-        String delim = "[ ]+";          // the regular expression defining the delimiting character(s)
+        String strin;              // input string
+        String[] tokens = null;    // an array of strings for tokens split from the input string
+        String delim = "[ ]+";     // the regular expression defining the delimiting character(s)
 
         // connect the data file
         Scanner fReader = new Scanner(new File("DataForEOF.txt"));

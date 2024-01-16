@@ -29,10 +29,33 @@ public class EOFAndLoadFromDiskStarter{
         int columnCount = 0; 
 
         // do the eof loop
-
-        // set counter to 0
         
-        // eof loop to load parallel arrays record by record
+        rowCount = 0;
+        
+        while(fReader.hasNext()){
+            // read a line from the file
+            strin = fReader.nextLine();
+            //System.out.println(strin);
+            
+            // split the input string into tokens
+            tokens = strin.split(delim);
+            //System.out.println(tokens.length);
+            
+            // parse each token and add it to the appropraite array
+            team[rowCount] = tokens[0];
+            
+            // the actual number of columns in use
+            columnCount = tokens.length -1;
+
+            // load each row of the table
+            for(int i = 1; i < tokens.length; i++){
+                numbers[rowCount][i - 1] = Integer.parseInt(tokens[i]);
+            }// end for i
+            
+            rowCount++;
+        }// end eof
+
+        
 
         // print the parallel arrays
         printSummary(team, numbers, rowCount, columnCount);

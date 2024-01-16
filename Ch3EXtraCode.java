@@ -21,13 +21,13 @@ public class Ch3EXtraCode{
         
         //** char arrays and strings
         String st = "asdflasdf";
-        System.out.println(st);
-        System.out.println(st.charAt(0));
-        //st.charAt(0) = 'Y';
-        char[] chArray = st.toCharArray();
-        //System.out.println(chArray.toString());
-        System.out.println(Arrays.toString(chArray));
-        System.out.println(st);
+        // System.out.println(st);
+        // System.out.println(st.charAt(0));
+        // //st.charAt(0) = 'Y';
+        // char[] chArray = st.toCharArray();
+        // //System.out.println(chArray.toString());
+        // System.out.println(Arrays.toString(chArray));
+        // System.out.println(st);
         
         
         // swap values using bitwise operator xor (exclusive or)
@@ -41,6 +41,21 @@ public class Ch3EXtraCode{
         // System.out.println(n);
         // System.out.println(m);
         
+        // use special characters in a regular expression
+        st = "one++two+three+";
+        //String[] tokens = st.split("[\'+']+");
+        //System.out.println(tokens.length);
+        //or
+        // String[] tokens = st.split("[\\+]+");
+        // System.out.println(tokens[0]);
+        // System.out.println(tokens[1]);
+        // System.out.println(tokens[2]);
+        // //System.out.println(tokens[3]);
+        
+        StringBuilder sb = new StringBuilder();
+        sb.append("Hello");
+        sb.delete(2, 4);
+        System.out.println(sb.toString());
         
 
 
