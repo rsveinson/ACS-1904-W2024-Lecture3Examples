@@ -5,7 +5,7 @@ import java.util.Arrays;
  * @author 
 */
 
-public class Ch3EXtraCode{
+public class Ch3EXtraCodeV2{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -43,10 +43,13 @@ public class Ch3EXtraCode{
         
         // use special characters in a regular expression
         st = "one++two+three+";
-        String[] tokens = st.split("[\'+']+");
-        System.out.println(tokens.length);
+        // String[] tokens = st.split("[\'+']+");
+        // System.out.println(tokens.length);
         //or
+        String[] tokens = st.split("\\+");
         //String[] tokens = st.split("[\\+]+");
+        //String[] tokens = st.split("[+]+");
+        System.out.println(tokens.length);
         System.out.println(tokens[0]);
         System.out.println(tokens[1]);
         System.out.println(tokens[2]);

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ValidateFormat
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=sin
+comment2.target=boolean\ validateSIN(java.lang.String)
+numComments=3
