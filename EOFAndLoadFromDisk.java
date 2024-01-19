@@ -30,30 +30,7 @@ public class EOFAndLoadFromDisk{
 
         // do the eof loop
 
-        rowCount = 0;          // make sure we start counting at 0
-
-        while(fReader.hasNext()){
-            // read a line from the file
-            strin = fReader.nextLine();
-            //System.out.println(strin);
-
-            // split the input string into tokens
-            tokens = strin.split(delim);
-            //System.out.println(tokens.length);
-
-            // the actual number of columns in use
-            columnCount = tokens.length -1;     
-
-            // parse each token and add it to the appropraite array
-            team[rowCount] = tokens[0];
-
-            // load each row of the table
-            for(int i = 1; i < tokens.length; i++){
-                numbers[rowCount][i - 1] = Integer.parseInt(tokens[i]);
-            }// end for i
-
-            rowCount++;
-        }// end eof
+        
 
         // print the parallel arrays
         printSummary(team, numbers, rowCount, columnCount);
@@ -63,14 +40,14 @@ public class EOFAndLoadFromDisk{
     public static void printSummary(String[] team, int[][] numbers, int rows, int columns){
         for(int i = 0; i < rows; i++){
             System.out.print(team[i] + " ");
-            
+
             for(int j = 0; j < columns; j++){    
                 System.out.print(numbers[i][j] + " ");
             }//end j
             System.out.println();
         }// end i
     }// end print summary
-    
+
     public static void printTable(int[][] t, int rows, int columns){
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < columns; j++){
