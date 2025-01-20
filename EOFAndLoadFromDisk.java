@@ -25,7 +25,7 @@ public class EOFAndLoadFromDisk{
         String[] team = new String[MAXTEAMS];
         int[][] numbers = new int[MAXTEAMS][MAXNUMBERS];
 
-        int rowCount;              // for counting and indexing input read from the file
+        int rowCount =0;              // for counting and indexing input read from the file
         int columnCount = 0; 
 
         // do the eof loop
