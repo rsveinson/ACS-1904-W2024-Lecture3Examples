@@ -11,7 +11,7 @@ public class Ch3EXtraCodeV2{
         
         //String line = scanner.next();
         //String line = "exit";
-        // assert line != "exit";
+        //assert line != "exit";
         
         // String otherLine = scanner.next();
         // assert !otherLine.equals("Exit") : "line is  Exit";
