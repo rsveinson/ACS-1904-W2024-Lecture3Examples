@@ -43,9 +43,11 @@ public class Ch3EXtraCodeV2{
         
         // use special characters in a regular expression
         st = "one++two+three+";
-        // String[] tokens = st.split("[\'+']+");
+        //st = "one\two\three+";
+        //String[] tokens = st.split("[\'+']+");
         // System.out.println(tokens.length);
         //or
+        
         String[] tokens = st.split("\\+");
         //String[] tokens = st.split("[\\+]+");
         //String[] tokens = st.split("[+]+");
