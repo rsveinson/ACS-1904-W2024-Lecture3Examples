@@ -41,7 +41,24 @@ public class Ch3EXtraCodeV2{
         // System.out.println(n);
         // System.out.println(m);
         
+        /* use bitwise and to set a flag to false
+         * this replaces the if structure we have
+         * used previously to check the validity of 
+         * values
+         */
         
+        boolean b1 = true;
+        boolean valid = true;
+        System.out.println("b1 is: " + b1 + " valid is " + valid);
+        
+        valid = valid & b1;
+        System.out.println("b1 is: " + b1 + " valid is " + valid);
+
+        valid &= 8 > 10;
+        System.out.println("b1 is: " + b1 + " valid is " + valid);
+        
+        valid &= 20 > 10;
+        System.out.println("b1 is: " + b1 + " valid is " + valid);
         
         // use special characters in a regular expression
         st = "one++two+three+";
