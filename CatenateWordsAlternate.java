@@ -9,7 +9,7 @@ public class CatenateWordsAlternate
     public static String formNewWord(String line){
         String newWord = "";
         String[] tokens;                // String array
-        tokens = line.split(" +");       // use one or more spaces as the delimiter
+        tokens = line.split(" ");       // use one or more spaces as the delimiter
         
         //now we have 
         //tokens is {"retail", "sales", "tax"}

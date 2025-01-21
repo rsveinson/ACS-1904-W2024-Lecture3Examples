@@ -6,7 +6,7 @@ public class CheckArgumentValue
 {
     public static void main(String[] args){
         // bad value passed to getAge
-        int age = getAge("2000-01-01"); 
+        int age = getAge("2000-b1-01"); 
         assert age > 0 : "age must be positive";
         System.out.println(age);
     }

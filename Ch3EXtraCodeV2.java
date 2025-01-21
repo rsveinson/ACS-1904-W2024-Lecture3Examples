@@ -10,8 +10,8 @@ public class Ch3EXtraCodeV2{
         Scanner scanner = new Scanner(System.in);
         
         //String line = scanner.next();
-        //String line = "exit";
-        //assert line != "exit";
+        // String line = "exit";
+        // assert line != "exit";
         
         // String otherLine = scanner.next();
         // assert !otherLine.equals("Exit") : "line is  Exit";
@@ -40,6 +40,8 @@ public class Ch3EXtraCodeV2{
         // n ^= m;
         // System.out.println(n);
         // System.out.println(m);
+        
+        
         
         // use special characters in a regular expression
         st = "one++two+three+";
