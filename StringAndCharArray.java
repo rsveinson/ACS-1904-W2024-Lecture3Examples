@@ -25,6 +25,12 @@ public class StringAndCharArray{
 
         printCharArray(strin, strin.length);
         
+        // or perhaps
+        String strinFinal = Arrays.toString(strin);
+        System.out.println("string final " + strinFinal);
+        
+        strinFinal = String.valueOf(strin);
+        System.out.println("string final " + strinFinal);
         
         System.out.println("end of program");
     }// end main
