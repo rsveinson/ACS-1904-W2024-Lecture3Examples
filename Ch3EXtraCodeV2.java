@@ -60,15 +60,21 @@ public class Ch3EXtraCodeV2{
         valid &= 20 > 10;
         System.out.println("b1 is: " + b1 + " valid is " + valid);
         
-        String id = "123-456-abc-123";
+        /*using bitwise and to validate a longer
+         * id number of some sort, all characters 
+         * should be digits, so parts 1 and 2 are valid
+         * parts 3 and 4 are invalid
+         */
+        String id = "123-456-abc-d23";
         String tokens[] = id.split("[-]+");
-        valid = true;   // assume that the data is valid
         
         for(int i = 0; i < tokens.length; i++){
+            valid = true;   // assume that each part is valid format
+            
             for(int j = 0; j < tokens[i].length(); j++){
                 valid &= Character.isDigit(tokens[i].charAt(j));
             }// check the first part of the id
-            System.out.println("Part " + i + " is " + valid);
+            System.out.println("Part " + i + " is " + (valid ? "valid" : "invalid"));
             
             
         }//loop over each token split from the original id

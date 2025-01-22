@@ -45,6 +45,7 @@ public class EOFAndLoadFromDisk{
             team[rowCount] = tokens[0];
             
             // the actual number of columns in use
+            // -1 because the first token is the team name
             columnCount = tokens.length -1;
 
             // load each row of the table
