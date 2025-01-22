@@ -60,13 +60,27 @@ public class Ch3EXtraCodeV2{
         valid &= 20 > 10;
         System.out.println("b1 is: " + b1 + " valid is " + valid);
         
+        String id = "123-456-abc-123";
+        String tokens[] = id.split("[-]+");
+        valid = true;   // assume that the data is valid
+        
+        for(int i = 0; i < tokens.length; i++){
+            for(int j = 0; j < tokens[i].length(); j++){
+                valid &= Character.isDigit(tokens[i].charAt(j));
+            }// check the first part of the id
+            System.out.println("Part " + i + " is " + valid);
+            
+            
+        }//loop over each token split from the original id
+        
+        
         // use special characters in a regular expression
         st = "one++two+three+";
         //st = "one\two\three+";
         //String[] tokens = st.split("[\'+']+");
         // System.out.println(tokens.length);
         //or
-        
+        /*
         String[] tokens = st.split("\\+");
         //String[] tokens = st.split("[\\+]+");
         //String[] tokens = st.split("[+]+");
@@ -81,7 +95,7 @@ public class Ch3EXtraCodeV2{
         sb.delete(2, 4);
         System.out.println(sb.toString());
         
-
+*/
 
         System.out.println("end of program");
     }
