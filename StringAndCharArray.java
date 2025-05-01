@@ -26,6 +26,7 @@ public class StringAndCharArray{
         printCharArray(strin, strin.length);
         
         // or perhaps
+        /* new stuff follows */
         String strinFinal = Arrays.toString(strin);
         System.out.println("string final " + strinFinal);
         

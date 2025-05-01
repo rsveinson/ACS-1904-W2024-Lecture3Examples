@@ -64,26 +64,26 @@ public class Ch3EXtraCodeV2{
          * id number of some sort, all characters 
          * should be digits, so parts 1 and 2 are valid
          * parts 3 and 4 are invalid
-         */
-        String id = "123-456-abc-d23";
-        String tokens[] = id.split("[-]+");
+         // */
+        // String id = "123-456-abc-d23";
+        // //String tokens[] = id.split("[-]+");
         
-        for(int i = 0; i < tokens.length; i++){
-            valid = true;   // assume that each part is valid format
+        // for(int i = 0; i < tokens.length; i++){
+            // valid = true;   // assume that each part is valid format
             
-            for(int j = 0; j < tokens[i].length(); j++){
-                valid &= Character.isDigit(tokens[i].charAt(j));
-            }// check the first part of the id
-            System.out.println("Part " + i + " is " + (valid ? "valid" : "invalid"));
+            // for(int j = 0; j < tokens[i].length(); j++){
+                // valid &= Character.isDigit(tokens[i].charAt(j));
+            // }// check the first part of the id
+            // System.out.println("Part " + i + " is " + (valid ? "valid" : "invalid"));
             
             
-        }//loop over each token split from the original id
+        // }//loop over each token split from the original id
         
         
         // use special characters in a regular expression
         st = "one++two+three+";
         //st = "one\two\three+";
-        //String[] tokens = st.split("[\'+']+");
+        String[] tokens = st.split("[\'+' - ]+");
         // System.out.println(tokens.length);
         //or
         /*

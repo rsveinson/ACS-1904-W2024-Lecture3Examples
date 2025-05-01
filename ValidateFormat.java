@@ -16,6 +16,13 @@ public class ValidateFormat
             String[] sinParts;
             sinParts = sin.split("-");
             
+            /*note the change in the regular expression
+             * I think that this is probably better, it
+             * is easier to modify and scale, we can easily
+             * delimit with more than one character
+             */
+            //sinParts = sin.split("[-]+");
+            
             // now we can easily validate the original sin string
             // must have 3 parts ad 11 characters total (9 digits and two dashes)
             valid &= sin.length()==11;      // valid will be true if valid is true and length is 11

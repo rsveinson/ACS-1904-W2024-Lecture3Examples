@@ -8,10 +8,12 @@ import java.util.Arrays;
  */
 
 public class EOFAndLoadFromDisk{
+    static final int MAXNUMBERS = 15;
+    
     public static void main(String[] args)throws FileNotFoundException {
         // Some constatns
         final int MAXTEAMS = 10;
-        final int MAXNUMBERS = 15;
+        
 
         // stuff to read records from the file
         String strin;                   // input string
@@ -32,7 +34,7 @@ public class EOFAndLoadFromDisk{
         
         rowCount = 0;
         
-        while(fReader.hasNext()){
+        while(fReader.hasNextLine()){
             // read a line from the file
             strin = fReader.nextLine();
             //System.out.println(strin);
@@ -49,7 +51,7 @@ public class EOFAndLoadFromDisk{
             columnCount = tokens.length -1;
 
             // load each row of the table
-            for(int i = 1; i < tokens.length; i++){
+            for(int i = 1; i < columnCount; i++){
                 numbers[rowCount][i - 1] = Integer.parseInt(tokens[i]);
             }// end for i
             
@@ -84,6 +86,7 @@ public class EOFAndLoadFromDisk{
     }// end print table
 
     public static void printList(int[] l, int n){
+        
         for(int i = 0; i < n; i++){        
             System.out.print(l[i] + " ");
         }// end i

@@ -29,6 +29,24 @@ public class EOFAndLoadFromDiskStart{
         int columnCount = 0; 
 
         // do the eof loop
+        
+        rowCount = 0;       // set number of records read to 0
+        
+        while(fReader.hasNext()){
+            strin = fReader.nextLine();
+            //System.out.println(strin);
+            
+            // split the input line
+            tokens = strin.split(delim);
+            //System.out.println(tokens.length);
+            
+            // load team array
+            team[rowCount] = tokens[0];
+            //System.out.println(team[rowCount]);
+            
+            // load numeric values
+            
+        }// end eof
 
         
 
